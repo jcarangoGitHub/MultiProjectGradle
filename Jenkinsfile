@@ -24,7 +24,7 @@ pipeline {
 		stage('Checkout') {
 			steps{
 				echo "------------>Checkout<------------"
-				checkout([$class: 'GitSCM', branches: [[name: 'master']], doGenerateSubmoduleConfigurations: false, extensions: [], gitTool: 'Git_Centos', submoduleCfg: [], userRemoteConfigs: [[credentialsId: 'GitHub_yucaci24', url: 'https://github.com/yucaci24/PC_MultiProjectGradle']]])
+				checkout([$class: 'GitSCM', branches: [[name: 'master']], doGenerateSubmoduleConfigurations: false, extensions: [], gitTool: 'Git_Centos', submoduleCfg: [], userRemoteConfigs: [[credentialsId: 'GitHub_jcarangoGitHub', url: 'https://github.com/jcarangoGitHub/MultiProjectGradle']]])
 				sh 'gradle clean'
 			}
 		}
@@ -71,7 +71,7 @@ pipeline {
 		failure {
 			echo 'This will run only if failed'
 			//send notifications about a Pipeline to an email
-			mail (to: 'yuliana.canas@ceiba.com.co',
+			mail (to: 'juan.arango@ceiba.com.co',
 			      subject: "Failed Pipeline: ${currentBuild.fullDisplayName}",
 			      body: "Something is wrong with ${env.BUILD_URL}")
 		}
