@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.gradle.webservice.TestTestTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2018-04-05T18:10:28" hostname="yuliana-canas" time="0.045">
+  <properties/>
+  <testcase name="testApiCompileClasspath" classname="org.gradle.webservice.TestTestTest" time="0.004"/>
+  <testcase name="testClasspath" classname="org.gradle.webservice.TestTestTest" time="0.04"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
